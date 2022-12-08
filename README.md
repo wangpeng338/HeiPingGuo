@@ -1,9 +1,9 @@
 # HeiPingGuo
 
-0.基本配置
-  Thinkpad T430
-  u盘-16G
-1.准备
+#0.基本配置
+#  Thinkpad T430
+#  u盘-16G
+#1.准备
   镜像
   transmac 或 etcher
   EFI
