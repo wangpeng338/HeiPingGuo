@@ -1,17 +1,24 @@
 
+#####################
+
+一、初相识
+
+#####################
+
 0.基本配置
   Thinkpad T430
   u盘-16G
 
 1.准备 
-  镜像 
+  一台windows工具主机
+  镜像 10.14.6 非官方版 
   transmac 或 etcher 
   EFI 
   diskgenius 
   替换EFI 
 
 2.安装 
-  实用工具-硬盘工具 格式化-guid 
+  实用工具-硬盘工具 内置硬盘格式化-guid 
   安装macos 
       副本损坏错误解决：实用工具-终端-date XXXXX命令 
       
@@ -19,7 +26,51 @@
   替换硬盘EFI：打开终端-list硬盘-mount disk0 的EFI -mount u盘的EFI - open . 打开 - 替换EFI 
   配置无线网卡：安装heliport.dmg并设置开机启动-下载itlwm.kext 放入 other 文件夹
 
-4.优化 
-  下载官方macos 
-  优化EFI 
-  macos下制作启动盘
+4.请迫症 
+  下载官方macos 10.15.7 下载器，抹掉u盘，写入官方镜像，制作启动盘
+  挂载u盘EFI分区，sudo diskutil mount disk2s1，写入boot和clover。
+  重装主机-U盘启动-格式化内置硬盘-boot from install macos Catalina
+  替换EFI文件，驱动无线网卡，设置heliport开机启动；
+
+#####################
+
+二、重构EFI
+
+#####################
+
+1.配置文件
+
+
+2.diver
+
+3.kext
+
+
+###################
+
+三、OC
+
+#####################
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
